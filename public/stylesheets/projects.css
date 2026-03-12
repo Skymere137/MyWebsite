@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: rubik;
+    src: url(../resources/Rubik/Rubik-Italic-VariableFont_wght.ttf)
+}
+@font-face {
+    font-family: playwrite;
+    src: url(../../resources/Playwrite_CU/PlaywriteCU-VariableFont_wght.ttf)
+}
+h1 {
+    font-size: 45px;
+    font-family: 'playwrite';
+    text-decoration: underline;
+    color: white;
+}
+h2 {
+    color: white;
+    font-family: rubik;
+}
+h3 {
+    color: white;
+    font-family: rubik;
+    margin: 10px;
+}
+h4 {
+    color:rgb(255, 136, 0);
+    font-size: 1.5em;
+    text-decoration: none;
+    padding: .5em;
+    font-family: rubik;
+}
+h5 {
+    padding: 1em;
+    text-decoration: None;
+    font-size: 15px;
+    font-family: rubik;
+    color: rgb(255, 136, 0);
+}
+a {
+    text-decoration: none;
+}
+p {
+    color:white;
+    font-family: rubik;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    margin: 0 5em 5em 5em;
+}
+li {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    aspect-ratio: .7/1;
+}
+header {
+    width: 80%;
+    margin: 5% 10%;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    height: 3em;
+    background-color: rgba(34, 34, 34, 0.486);
+    position: sticky;
+    top: 0;
+}
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+main {
+    width: 100%;
+    text-align: center;
+}
+span {
+    margin: 0 3rem 5rem;
+}
+footer {
+    background-color: rgb(34, 34, 34);
+    aspect-ratio: 7 / 1;
+}
+.code-projects {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.project {
+    border: rgb(255, 136, 0) solid 3px;
+    width: 20em;
+    aspect-ratio: 1.2 /  1;
+    border-radius: 15px;
+    margin: 2rem;
+}
+.description {
+    width: 20em;
+    margin: 5em;
+}
+#firstApi {
+    background-image: url(../resources/serverCodePic.webp);
+    background-size: cover;
+}
+#candlestick {
+    background-image: url(../resources/candlestickPic.webp);
+    background-size: cover;
+}
+#text {
+    background-image: url(../resources/terminalPic.jpg);
+    background-size: cover;
+}
