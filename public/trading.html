@@ -4,14 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trading</title>
+    <link rel="stylesheet" href="stylesheets/trading.css">
+    <link rel="stylesheet" href="stylesheets/clock.css">
+    <script src="https://unpkg.com/lightweight-charts@4.2.1/dist/lightweight-charts.standalone.production.js"></script>
 </head>
 <body>
-    <h1>Strategies & Ideas</h1>
+     <nav>
+        <a href="projects.html">
+            <h3>
+                Projects
+            </h3>
+        </a>
+        <a href="index.html">
+            <h3>
+                Main Page
+            </h3>
+        </a>
+        <a>
+            <h3>
+                About Me
+            </h3>
+        </a>
+    </nav>
+
+    <header>
+        <h1>Trading</h1>
+    </header>
+    
+   <div class="clock">
+    <!-- Numbers -->
+        <div class="number number1">1</div>
+        <div class="number number2">2</div>
+        <div class="number number3">3</div>
+        <div class="number number4">4</div>
+        <div class="number number5">5</div>
+        <div class="number number6">6</div>
+        <div class="number number7">7</div>
+        <div class="number number8">8</div>
+        <div class="number number9">9</div>
+        <div class="number number10">10</div>
+        <div class="number number11">11</div>
+        <div class="number number12">12</div>
+
+        <!-- Hands -->
+        <div class="hand hour" id="hour-hand"></div>
+        <div class="hand minute" id="minute-hand"></div>
+        <div class="hand second" id="second-hand"></div>
+    </div>
 
     <main>
-        <div id="support-calculation" class="pic">
-            
+        <div class="control-panel">
+
+            <h3>Ticker Symbol</h3>
+            <input class="ticker" id="ticker">
+            <h3>Timeframe</h3>
+            <select class="timeframe" id="tf">
+                <option>1m</option>
+                <option>5m</option>
+                <option>1hr</option>
+                <option>1d</option>
+            </select>
+        </div>
+        <div class="chart" id="chart">
+
         </div>
     </main>
+    <script src="scripts/clock.js"></script>
+    <script src="scripts/charting.js"></script>
+    <script src="scripts/stockData.js"></script>
 </body>
 </html>

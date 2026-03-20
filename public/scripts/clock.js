@@ -1,8 +1,8 @@
 setInterval(setClock, 1000)
 
-const hourHand = document.querySelector('[data-hour]');
-const minuteHand = document.querySelector('[data-minute]');
-const secondHand = document.querySelector('[data-second]');
+const hourHand = document.getElementById('hour-hand');
+const minuteHand = document.getElementById('minute-hand');
+const secondHand = document.getElementById('second-hand');
 
 function setClock() {
     const currentDate = new Date();
