@@ -108,15 +108,15 @@ footer {
     width: 20em;
     margin: 5em;
 }
-#firstApi {
+#mkt-db {
     background-image: url(../resources/serverCodePic.webp);
     background-size: cover;
 }
-#candlestick {
+#Orchestra {
     background-image: url(../resources/candlestickPic.webp);
     background-size: cover;
 }
-#text {
+#TDD-BDD {
     background-image: url(../resources/terminalPic.jpg);
     background-size: cover;
 }

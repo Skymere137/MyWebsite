@@ -140,15 +140,15 @@ footer {
     background-image:url(../resources/autoPic.jpg);
     background-size: cover;
 }
-#API {
+#mkt-db {
     background-image:url(../resources/serverCodePic.webp);
     background-size: cover;
 }
-#CandleStick {
+#Orchestra {
     background-image:url(../resources/candlestickPic.webp);
     background-size: cover;
 }
-#texting {
+#TDD-BDD {
     background-image:url(../resources/terminalPic.jpg);
     background-size: cover;
 }
