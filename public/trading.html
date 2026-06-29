@@ -7,94 +7,97 @@
     <link rel="stylesheet" href="stylesheets/trading.css">
     <link rel="stylesheet" href="stylesheets/clock.css">
 </head>
+
 <body>
-     <nav>
-        <a href="projects.html">
-            <h3>
-                Projects
-            </h3>
-        </a>
-        <a href="index.html">
-            <h3>
-                Main Page
-            </h3>
-        </a>
+    <div class="container">
+        <nav>
+            <a href="projects.html">
+                <h3>
+                    Projects
+                </h3>
+            </a>
+            <a href="index.html">
+                <h3>
+                    Main Page
+                </h3>
+            </a>
 
-    </nav>
+        </nav>
 
-    <header>
-        <h1>Trading</h1>
-    </header>
-    
-   <div class="clock">
-    <!-- Numbers -->
-        <div class="number number1">1</div>
-        <div class="number number2">2</div>
-        <div class="number number3">3</div>
-        <div class="number number4">4</div>
-        <div class="number number5">5</div>
-        <div class="number number6">6</div>
-        <div class="number number7">7</div>
-        <div class="number number8">8</div>
-        <div class="number number9">9</div>
-        <div class="number number10">10</div>
-        <div class="number number11">11</div>
-        <div class="number number12">12</div>
-
-        <!-- Hands -->
-        <div class="hand hour" id="hour-hand"></div>
-        <div class="hand minute" id="minute-hand"></div>
-        <div class="hand second" id="second-hand"></div>
-    </div>
-    <main>
+        <header>
+            <h1>Trading</h1>
+        </header>
         
-        <aside>
-            <div class="control-panel">
-                <h2 class=ctrl-panel-header>Control Panel</h2>
+    <div class="clock">
+        <!-- Numbers -->
+            <div class="number number1">1</div>
+            <div class="number number2">2</div>
+            <div class="number number3">3</div>
+            <div class="number number4">4</div>
+            <div class="number number5">5</div>
+            <div class="number number6">6</div>
+            <div class="number number7">7</div>
+            <div class="number number8">8</div>
+            <div class="number number9">9</div>
+            <div class="number number10">10</div>
+            <div class="number number11">11</div>
+            <div class="number number12">12</div>
 
-                <h4 id="current-ticker">Current Ticker</h4>
-                <span class="ctrl-panel-span">
-                    <h3>Select Ticker</h3>
-                </span>
-                <input class="ticker" id="ticker">
-                <span class="ctrl-panel-span">
-                    <h3 id="current-tf">Timeframe</h3>
-                </span>
-                <select class="timeframe" id="tf">
-                    <option>Select Timeframe</option>
-                    <option>1m</option>
-                    <option>5m</option>
-                    <option>1h</option>
-                    <option>1d</option>
-                </select>
-                <h3 id="current_limit">Candle Limit</h3>
-                <input class="limiter" id="limit">
-                <button id="applyChart" class="applyChart">Chart</button>
-
-            </div>
-            <div class="controls">
-            </div>
-            
-            <div class="warning-label" id="warning-label">
-                <h4 id="warning-label-header"></h4>
-                <ul class="warnings" id="warning1">
-                    <li>Stock splits not accounted for on charts. Sharp drops in price may not be due to drop in marketcap</li>
-                </ul>
-
-            </div>
-        </aside>
-        <div class="chart" id="chart">
-
+            <!-- Hands -->
+            <div class="hand hour" id="hour-hand"></div>
+            <div class="hand minute" id="minute-hand"></div>
+            <div class="hand second" id="second-hand"></div>
         </div>
-    </main>
-    <footer>
-        <a href="https://github.com/Skymere137"><h4>Check Out My GitHub</h4></a>
-        <a href="projects.html"><h5>Check Out My Projects</h5></a>
-        
-    </footer>
-    <script src="https://unpkg.com/lightweight-charts@4.2.1/dist/lightweight-charts.standalone.production.js"></script>
-    <script src="scripts/clock.js"></script>
-    <!-- <script src="scripts/charting.js"></script> -->
-    <script src="scripts/stockData.js"></script>
+        <main>
+            
+            <aside>
+                <div class="control-panel">
+                    <h2 class=ctrl-panel-header>Control Panel</h2>
+
+                    <h4 id="current-ticker">Current Ticker</h4>
+                    <span class="ctrl-panel-span">
+                        <h3>Select Ticker</h3>
+                    </span>
+                    <input class="ticker" id="ticker">
+                    <span class="ctrl-panel-span">
+                        <h3 id="current-tf">Timeframe</h3>
+                    </span>
+                    <select class="timeframe" id="tf">
+                        <option>Select Timeframe</option>
+                        <option>1m</option>
+                        <option>5m</option>
+                        <option>1h</option>
+                        <option>1d</option>
+                    </select>
+                    <h3 id="current_limit">Candle Limit</h3>
+                    <input class="limiter" id="limit">
+                    <button id="applyChart" class="applyChart">Chart</button>
+
+                </div>
+                <div class="controls">
+                </div>
+                
+                <div class="warning-label" id="warning-label">
+                    <h4 id="warning-label-header"></h4>
+                    <ul class="warnings" id="warning1">
+                        <li>Stock splits not accounted for on charts. Sharp drops in price may not be due to drop in marketcap</li>
+                    </ul>
+
+                </div>
+            </aside>
+            <div class="chart" id="chart">
+
+            </div>
+        </main>
+        <footer>
+            <a href="https://github.com/Skymere137"><h4>Check Out My GitHub</h4></a>
+            <a href="projects.html"><h5>Check Out My Projects</h5></a>
+            
+        </footer>
+        <script src="https://unpkg.com/lightweight-charts@4.2.1/dist/lightweight-charts.standalone.production.js"></script>
+        <script src="scripts/clock.js"></script>
+        <!-- <script src="scripts/charting.js"></script> -->
+        <script src="scripts/stockData.js"></script>
+    </div>
 </body>
 </html>

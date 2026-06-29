@@ -15,24 +15,26 @@
     src: url(../../resources/Playwrite_CU/PlaywriteCU-VariableFont_wght.ttf)
 }
 h1 {
-    font-size: 45px;
+    font-size:clamp(2rem,5vw,3rem);
     font-family: 'playwrite';
     text-decoration: underline;
-    color: white;
-    margin: 3em;
+    color: rgb(80, 255, 240);
 }
 h2 {
-    color: white;
+    color: rgb(80, 255, 240);
     font-family: rubik;
+    font-size:clamp(1.3rem,3vw,2rem);
 }
 h3 {
-    color: white;
+    font-size:clamp(1rem,2vw,1.25rem);
+    color: rgb(80, 255, 240);
     font-family: rubik;
     margin: 10px;
 }
 h4 {
-    color:white;
-    font-size: 1.5em;
+    color:rgb(255, 136, 0);
+    font-size: 1.5rem;
+    text-decoration: none;
     padding: .5em;
     font-family: rubik;
 }
@@ -41,10 +43,10 @@ h5 {
     text-decoration: None;
     font-size: 15px;
     font-family: rubik;
-    color: white;
+    color: rgb(255, 136, 0);
 }
 p {
-    color: white;
+    color: rgb(80, 255, 240);
     font-family: 'rubik';
     text-indent: 40px;
 }
@@ -68,11 +70,11 @@ header {
 }
 nav {
     display: flex;
-    justify-content: space-around;
-    height: 3em;
+    justify-content: center;
     background-color: rgba(34, 34, 34, 0.486);
-    position: sticky;
-    top: 0;
+    flex-wrap:wrap;
+    padding:1rem;
+    gap: 3em;
 }
 main {
     display: flex;
@@ -81,9 +83,14 @@ main {
     flex-direction: column;
     text-align: center;
 }
-footer {
-    background-color:rgb(34, 34, 34);
-    aspect-ratio: 7 / 1;
+footer{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:.5rem;
+
+    padding:2rem;
 }
 
 .main-text {
@@ -94,20 +101,22 @@ footer {
     text-align: center;
 }
 .project-header {
-    color: white;
+    color: rgb(80, 255, 240);
     font-family: rubik;
     text-decoration: underline;
 }
 .topics {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
     align-items: center;
+    flex-wrap: wrap;
     text-align: center;
-    margin: 0 5em 5em 5em;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 5rem 0rem 5rem;
 }
 .subject {
-    width: 20rem;
+    width: 20em;
     aspect-ratio: 1.2 / 1;
     border: rgb(255, 136, 0) solid 3px;
     border-radius: 15px;

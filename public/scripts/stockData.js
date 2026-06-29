@@ -7,6 +7,7 @@ fetch('/api/config')
     baseUrl = config.baseUrl;
   })
   .catch(err => console.error('Failed to load config:', err));
+console.log(baseUrl)
 const tickerInput = document.getElementById('ticker');
 const timeframeInput = document.getElementById('tf');
 const limitInput = document.getElementById('limit')

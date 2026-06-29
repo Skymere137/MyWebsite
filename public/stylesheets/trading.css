@@ -15,23 +15,25 @@
     src: url(../../resources/Playwrite_CU/PlaywriteCU-VariableFont_wght.ttf)
 }
 h1 {
-    font-size: 45px;
+    font-size:clamp(2rem,5vw,3rem);
     font-family: 'playwrite';
     text-decoration: underline;
-    color: white;
+    color: rgb(80, 255, 240);
 }
 h2 {
-    color: white;
+    color: rgb(80, 255, 240);
     font-family: rubik;
+    font-size:clamp(1.3rem,3vw,2rem);
 }
 h3 {
-    color: white;
+    font-size:clamp(1rem,2vw,1.25rem);
+    color: rgb(80, 255, 240);
     font-family: rubik;
     margin: 10px;
 }
 h4 {
     color:rgb(255, 136, 0);
-    font-size: 1.5em;
+    font-size: 1.5rem;
     text-decoration: none;
     padding: .5em;
     font-family: rubik;
@@ -47,51 +49,63 @@ h5 {
 body {
     background-color: black;
 }
-header {
-    width: 80%;
-    margin: 5% 10%;
-    text-align: center;
+header{
+    max-width:1200px;
+    margin:2rem auto;
+    padding:0 1rem;
+    text-align:center;
 }
-nav {
-    display: flex;
-    justify-content: space-around;
-    height: 3em;
-    background-color: rgba(34, 34, 34, 0.486);
-    position: sticky;
-    top: 0;
+nav{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:3rem;
+
+    flex-wrap:wrap;
+
+    padding:1rem;
 }
 main {
-    margin: 3em 0;
     display: flex;
-    justify-content: space-around;
-    align-items:flex-start;
-
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: flex-start;
 }
 aside {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 300em;
+    flex: 1 1 320px;
+    max-width: 400px;
 }
-footer {
-    background-color: rgb(34, 34, 34);
-    aspect-ratio: 7 / 1;
-}
-input {
-    padding: .3em;
-    border: rgb(255, 136, 0) 3px solid;
-    border-radius: 7px;
-    width: 50%;
-}
+footer{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:.5rem;
 
-.control-panel {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    border: rgb(255, 136, 0) 3px solid;
-    width: fit-content;
-    height: auto;
-    margin: 2em;
+    padding:2rem;
+}
+input,
+select,
+button{
+    width:100%;
+    padding:.7rem;
+    font-size:1rem;
+}
+.container{
+    max-width:1600px;
+    margin:auto;
+    padding:0 1rem;
+}
+.control-panel{
+    display:flex;
+    flex-direction:column;
+
+    width:100%;
+    padding:1rem;
+    gap:1rem;
+
+    border:3px solid rgb(255,136,0);
 }
 .ctrl-panel-header-span{
     text-decoration: underline;
@@ -130,7 +144,49 @@ li::marker {
   color: rgb(214, 43, 0);
   font-size: 1.2em;
 }
+.chart{
+    flex: 3 1 700px;
 
-.chart {
-    border: rgb(255, 136, 0) 3px solid;
+    min-height:600px;
+    width:100%;
+
+    border:3px solid rgb(255,136,0);
+}
+@media (max-width: 900px){
+
+    main{
+        flex-direction:column;
+        padding:1rem;
+    }
+
+    aside{
+        max-width:none;
+        width:100%;
+    }
+
+    .chart{
+        width:100%;
+        min-height:450px;
+    }
+
+    nav{
+        gap:1rem;
+    }
+
+}
+
+@media (max-width:600px){
+
+    h1{
+        font-size:2rem;
+    }
+
+    .control-panel{
+        padding:.8rem;
+    }
+
+    .warning-label{
+        padding:1rem;
+    }
+
 }

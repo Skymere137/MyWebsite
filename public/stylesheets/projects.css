@@ -15,14 +15,14 @@ h1 {
     font-size: 45px;
     font-family: 'playwrite';
     text-decoration: underline;
-    color: white;
+    color: rgb(80, 255, 240);
 }
 h2 {
-    color: white;
+    color: rgb(80, 255, 240);
     font-family: rubik;
 }
 h3 {
-    color: white;
+    color: rgb(80, 255, 240);
     font-family: rubik;
     margin: 10px;
 }
